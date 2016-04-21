@@ -1,1 +1,4 @@
-# string_calculator_kata
+StringCalculatorKata
+====================
+
+** TODO: Add description **
