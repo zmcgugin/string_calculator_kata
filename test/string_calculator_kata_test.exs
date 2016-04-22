@@ -17,4 +17,19 @@ defmodule StringCalculatorKataTest do
     assert StringCalculatorKata.calculate("2, 4") == 6
   end
 
+  test "when given a input with any number of spaces they should be ignored" do
+    assert StringCalculatorKata.calculate("4,1") == 5
+    assert StringCalculatorKata.calculate("3 ,  2") == 5
+  end
+
+  test "when given a string of two numbers that are new line seperated " do
+    assert StringCalculatorKata.calculate("4\n5") == 9
+  end
+
+  test "when given a string with negative numbers each negative should be logged in an exception message" do
+    assert_raise RuntimeError, "Negative numbers are not alowed: -1 -5", fn ->
+      StringCalculatorKata.calculate("-1, 4, -5")
+    end
+  end
+
 end
