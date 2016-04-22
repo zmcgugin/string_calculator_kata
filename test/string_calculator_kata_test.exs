@@ -13,5 +13,8 @@ defmodule StringCalculatorKataTest do
     assert StringCalculatorKata.calculate("2") == 2
   end
 
+  test "when given a string of two comma seperated numbers they should be summed together" do
+    assert StringCalculatorKata.calculate("2, 4") == 6
+  end
 
 end
