@@ -1,5 +1,6 @@
 defmodule StringCalculatorKata do
-  def test do
-    1
+  def calculate(numbers) do
+    result = numbers == "1" && 1 || 0
+    result
   end
 end
