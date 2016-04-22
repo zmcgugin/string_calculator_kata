@@ -9,4 +9,9 @@ defmodule StringCalculatorKataTest do
     assert StringCalculatorKata.calculate("1") == 1
   end
 
+  test "when given a string of 2, 2 should be returned" do
+    assert StringCalculatorKata.calculate("2") == 2
+  end
+
+
 end
