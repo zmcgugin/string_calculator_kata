@@ -1,7 +1,6 @@
 defmodule StringCalculatorKataTest do
   use ExUnit.Case
-
   test "the truth" do
-    assert 1 + 1 == 2
+    assert StringCalculatorKata.test() == 1
   end
 end

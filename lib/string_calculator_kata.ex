@@ -1,3 +1,5 @@
 defmodule StringCalculatorKata do
-  IO.puts("hello world")
+  def test do
+    1
+  end
 end
